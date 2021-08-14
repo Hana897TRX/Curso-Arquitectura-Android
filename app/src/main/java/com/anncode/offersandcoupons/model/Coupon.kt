@@ -1,7 +1,6 @@
-package com.anncode.offersandcoupons
+package com.anncode.offersandcoupons.model
 
 import com.google.gson.JsonObject
-import java.lang.Exception
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.io.Serializable
