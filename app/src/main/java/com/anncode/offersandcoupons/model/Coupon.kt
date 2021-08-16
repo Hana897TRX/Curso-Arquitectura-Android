@@ -21,15 +21,15 @@ class Coupon(couponJson: JsonObject?) : Serializable {
 
     init {
             id                  = couponJson!!.get(ID).asString
-            image_url           = couponJson!!.get(IMAGE_URL).asString
-            title               = couponJson!!.get(TITLE).asString
-            descriptionShort    = chunkWords(couponJson!!.get(DESCRIPTION_SHORT).asString, ' ', 5)
-            category            = chunkWords(couponJson!!.get(CATEGORY).asString, ',', 1)
-            description         = couponJson!!.get(DESCRIPTION).asString
-            offer               = couponJson!!.get(OFFER).asString
-            website             = couponJson!!.get(WEBSITE).asString
-            endDate             = getFormatDate(couponJson!!.get(END_DATE).asString)
-            url                 = couponJson!!.get(URL).asString
+            image_url           = couponJson.get(IMAGE_URL).asString
+            title               = couponJson.get(TITLE).asString
+            descriptionShort    = chunkWords(couponJson.get(DESCRIPTION_SHORT).asString, ' ', 5)
+            category            = chunkWords(couponJson.get(CATEGORY).asString, ',', 1)
+            description         = couponJson.get(DESCRIPTION).asString
+            offer               = couponJson.get(OFFER).asString
+            website             = couponJson.get(WEBSITE).asString
+            endDate             = getFormatDate(couponJson.get(END_DATE).asString)
+            url                 = couponJson.get(URL).asString
     }
 
     companion object {
